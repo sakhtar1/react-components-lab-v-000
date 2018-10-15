@@ -15,14 +15,14 @@ export class OlderCoaster extends Component {
    render() {
      return (
      <div class ="olderCoaster">
-     <p pText= {"Two grannies having the time of their life!"}/>
-     <p pText= {"Passengers:"}/>
+     <p> Two grannies having the time of their life!</p>
+     <p> Passengers: </p>
      <ul>
-      <li {"Agnes"}/>
-      <li {"Muriel"}/>
+      <li> {props.name}</li>
+      <li> {props.name}</li>
      </ul>
      </div>
-   )
+    )
    }
   //
 }
