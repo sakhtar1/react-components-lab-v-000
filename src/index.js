@@ -15,8 +15,8 @@ export class OlderCoaster extends Component {
    render() {
      return (
      <div class ="olderCoaster">
-     <p> Two grannies having the time of their life!</p>
-     <p> Passengers: </p>
+       <p> {"Two grannies having the time of their life!}"</p>
+       <p> {"Passengers:"} </p>
      <ul>
       <li> {props.name}</li>
       <li> {props.name}</li>
@@ -29,10 +29,31 @@ export class OlderCoaster extends Component {
 
 export class InFrontOfYou extends Component {
   // your code here
+  render() {
+   return (
+     <div>
+       <p>{"You shouldnt look too far."}</p>
+       <p>{"Sometimes, the solution is right in front of you."}</p>
+     </div>  
+   )
+ }
 }
 
 export class ButcherShop extends Component {
   // your code here
+  const ROTTEN_MEAT_PRODUCTS = ["Old Fish", "Sweeney Todd", "Tomatoes?"]
+ 
+const products = [<li>{ROTTEN_MEAT_PRODUCTS[0]}</li>, <li>ROTTEN_MEAT_PRODUCTS[1]</li>, etc...]
+render() {
+  return (
+    <div class="butcher-shop">
+      <p>{"Hello! We have the following products for sale today:"}</p>
+      <ul>
+        { products }
+      </ul>
+    </div>
+  )
+ }
 }
 
 
@@ -40,7 +61,7 @@ export class App extends Component {
   render() {
     return (
       <div id="app">
-
+    
       </div>
     )
   }
