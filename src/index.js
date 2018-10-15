@@ -17,6 +17,10 @@ export class OlderCoaster extends Component {
      <div class ="olderCoaster">
      <p pText= {"Two grannies having the time of their life!"}/>
      <p pText= {"Passengers:"}/>
+     <ul>
+      <li {"Agnes"}/>
+      <li {"Muriel"}/>
+     </ul>
      </div>
    )
    }
